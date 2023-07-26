@@ -17,3 +17,7 @@ git clone "https://github.com/astronomy-club-at-nitic/quiz-rally.git"
 ```powershell
 docker compose -f "./docker/docker-compose.development.yaml" -p "quiz-rally" up -d
 ```
+
+## Design
+
+- [Figma](https://www.figma.com/file/BTr1WeuSZkT7CUEehBThdU/aeon-quiz-rally?type=design&node-id=4%3A1411&mode=design&t=QMgk7pDoYeTQiesr-1)
