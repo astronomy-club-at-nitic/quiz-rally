@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: quiz-rally-app
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.development
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspaces/quiz-rally/
+      - type: volume
+        source: node-modules
+        target: /workspaces/quiz-rally/node_modules/
+      - type: volume
+        source: pnpm-store
+        target: /workspaces/quiz-rally/.pnpm-store/
+    tty: true
+
+volumes:
+  node-modules:
+    driver: local
+  pnpm-store:
+    driver: local
