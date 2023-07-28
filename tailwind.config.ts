@@ -1,4 +1,3 @@
-import tailwindScrollbar from 'tailwind-scrollbar';
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import { createThemes } from 'tw-colors';
@@ -26,11 +25,7 @@ const config: Config = {
       light: colors.light,
       dark: colors.dark,
     }),
-    tailwindScrollbar({ nocompatible: true }),
   ],
-  variants: {
-    scrollbar: ['rounded'],
-  },
 };
 
 export default config;
