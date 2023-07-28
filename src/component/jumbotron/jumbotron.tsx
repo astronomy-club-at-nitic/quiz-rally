@@ -1,11 +1,13 @@
-import { ReactNode } from 'react';
+import type { ComponentPropsWithoutRef, ReactNode } from 'react';
 import JumbotronBackgroundImage from '@/asset/jumbotron/background.png';
 import { Image } from '@/component/common/image';
 import { BrandIcon } from '@/icon/brand-icon';
 import { breakpoints } from '@/style/token';
 
-export const Jumbotron = (): ReactNode => (
-  <div className="relative h-[400px] w-full overflow-y-hidden">
+type JumbotronProps = Omit<ComponentPropsWithoutRef<'div'>, 'children' | 'className'>;
+
+export const Jumbotron = ({ ...props }: JumbotronProps): ReactNode => (
+  <div className="relative h-[400px] w-full overflow-y-hidden" {...props}>
     <Image
       src={JumbotronBackgroundImage}
       sizes={`${breakpoints.desktop.mediaQuery} 1280px, 100vw`}
