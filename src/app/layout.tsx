@@ -15,13 +15,7 @@ type RootLayoutProps = {
 const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
   <html lang="ja" suppressHydrationWarning>
     <head />
-    <body
-      className={cn(
-        fontFamily,
-        'bg-blue-1 font-sans',
-        'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-slate-6 scrollbar-thumb-rounded-full hover:scrollbar-thumb-slate-7',
-      )}
-    >
+    <body className={cn(fontFamily, 'bg-blue-1 font-sans')}>
       <ThemeProvider attribute="data-theme" enableSystem defaultTheme="system">
         <PageTransitionAnimationProvider>
           <main>{children}</main>
