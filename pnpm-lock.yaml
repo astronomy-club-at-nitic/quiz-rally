@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.0.0
     version: 2.0.0
   framer-motion:
-    specifier: 10.14.0
-    version: 10.14.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: 10.15.0
+    version: 10.15.0(react-dom@18.2.0)(react@18.2.0)
   jotai:
     specifier: 2.2.2
     version: 2.2.2(react@18.2.0)
@@ -133,9 +133,6 @@ devDependencies:
   stylelint-prettier:
     specifier: 4.0.2
     version: 4.0.2(prettier@3.0.0)(stylelint@15.10.2)
-  tailwind-scrollbar:
-    specifier: 3.0.4
-    version: 3.0.4(tailwindcss@3.3.3)
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3(ts-node@10.9.1)
@@ -2932,8 +2929,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion@10.14.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-XMZCbki8+9+D9of6P0cFtGrSGItNvXUJqvGI8O5v5aSvprA3PNlcpgfLEfTIZ9woNuZtYv56dprktuQ+S2welw==}
+  /framer-motion@10.15.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-HDjWrYWgbO5orKuhnXETLFzk7UUvwWur2HFs2elAZ8lVpI49ClHql31DNTVvVBcOrSHfAOS4eBDBedIvOx634w==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -5686,15 +5683,6 @@ packages:
   /tailwind-merge@1.14.0:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: false
-
-  /tailwind-scrollbar@3.0.4(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-X/QBsn/C5u9x6/YvTc1Zo7b09Gqs5BfDe0UK/8LDQUv8IEBKF+p2ISTRwvAr50MH0hn/wTyCEOann7uXoa1/2Q==}
-    engines: {node: '>=12.13.0'}
-    peerDependencies:
-      tailwindcss: 3.x
-    dependencies:
-      tailwindcss: 3.3.3(ts-node@10.9.1)
-    dev: true
 
   /tailwind-variants@0.1.13(tailwindcss@3.3.3):
     resolution: {integrity: sha512-G2M7M74hjq0nAo6QdEfUJgF+0t9DecFUw91GC1P9YTnwMcfB3uChT5U5e2DuNU42xoOz15lzo7r0mPdMzZkylg==}
