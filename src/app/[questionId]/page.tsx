@@ -1,6 +1,6 @@
 // TODO: Remove this comment if QuestionIdPage is implemented.
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 // import { QuestionPage } from '@/component/question/question-page';
 import { questions } from '@/constant/question';
