@@ -1,14 +1,13 @@
-import { ComponentPropsWithoutRef } from 'react';
 import ChoiceThumbnail1Image from '@/asset/choice/thumbnail1.png';
 import Map1Image from '@/asset/map/1.png';
 import QuestionThumbnail1Image from '@/asset/question/thumbnail1.jpg';
-import { Image } from '@/component/common/image';
+import type { StaticImageData } from '@/type/static-image-data';
 
 export type Choice = {
   id: string;
   title: string;
-  thumbnailSrc: ComponentPropsWithoutRef<typeof Image>['src'];
-  thumbnailAlt: ComponentPropsWithoutRef<typeof Image>['alt'];
+  thumbnailSrc: StaticImageData;
+  thumbnailAlt: string;
 };
 
 export type Answer = {
@@ -21,12 +20,12 @@ export type Question = {
   id: string;
   title: string;
   content: string;
-  thumbnailSrc: ComponentPropsWithoutRef<typeof Image>['src'];
-  thumbnailAlt: ComponentPropsWithoutRef<typeof Image>['alt'];
+  thumbnailSrc: StaticImageData;
+  thumbnailAlt: string;
   choices: Choice[];
   answer: Answer;
-  mapImageSrc: ComponentPropsWithoutRef<typeof Image>['src'];
-  mapImageAlt: ComponentPropsWithoutRef<typeof Image>['alt'];
+  mapImageSrc: StaticImageData;
+  mapImageAlt: string;
   hashedToken: string;
 };
 
