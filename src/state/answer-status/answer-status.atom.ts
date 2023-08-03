@@ -4,11 +4,11 @@ import { atomKeys } from '@/state/atom-keys';
 
 export type AnswerStatuses = {
   questionId: string;
-  choiceTitle: string | undefined;
+  choiceId: string | undefined;
   isCorrect: boolean | undefined;
 }[];
 
-export const AnswerStatusesAtom = atomWithStorage<AnswerStatuses>(
+export const answerStatusesAtom = atomWithStorage<AnswerStatuses>(
   atomKeys['answer-status'],
-  questions.map((question) => ({ questionId: question.id, choiceTitle: undefined, isCorrect: undefined })),
+  questions.map((question) => ({ questionId: question.id, choiceId: undefined, isCorrect: undefined })),
 );

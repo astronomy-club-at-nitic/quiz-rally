@@ -1,20 +1,20 @@
 import { useAtomValue, useSetAtom } from 'jotai';
 import { useCallback } from 'react';
-import { AnswerStatusesAtom } from './answer-status.atom';
+import { answerStatusesAtom } from './answer-status.atom';
 
 export const useAnswerStatuses = () => {
-  const answerStatuses = useAtomValue(AnswerStatusesAtom);
+  const answerStatuses = useAtomValue(answerStatusesAtom);
 
   return { answerStatuses };
 };
 
 export const useAnswerStatusesMutator = () => {
-  const setAnswerStatuses = useSetAtom(AnswerStatusesAtom);
+  const setAnswerStatuses = useSetAtom(answerStatusesAtom);
 
   const setAnswerStatusesById = useCallback(
-    (questionId: string, choiceTitle: string, isCorrect: boolean) => {
-      setAnswerStatuses((prev) =>
-        prev.map((AnswerStatuses) => (AnswerStatuses.questionId === questionId ? { ...AnswerStatuses, choiceTitle, isCorrect } : AnswerStatuses)),
+    (questionId: string, choiceId: string, isCorrect: boolean) => {
+      setAnswerStatuses((answerStatuses) =>
+        answerStatuses.map((answerStatus) => (answerStatus.questionId === questionId ? { questionId, choiceId, isCorrect } : answerStatus)),
       );
     },
     [setAnswerStatuses],
