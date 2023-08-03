@@ -25,6 +25,7 @@ const config: Config = {
       light: colors.light,
       dark: colors.dark,
     }),
+    require('tailwindcss-animate'),
   ],
 };
 
