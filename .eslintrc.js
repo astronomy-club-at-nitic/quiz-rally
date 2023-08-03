@@ -28,6 +28,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
+    '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
     'arrow-body-style': ['error', 'as-needed'],
     'json/*': ['error', 'allowComments'],
     'import/no-default-export': 'error',

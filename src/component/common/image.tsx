@@ -1,5 +1,5 @@
 import NextImage from 'next/image';
-import { ComponentPropsWithRef, ElementRef, forwardRef } from 'react';
+import { type ComponentPropsWithRef, type ElementRef, forwardRef } from 'react';
 
 type ImageProps = ComponentPropsWithRef<typeof NextImage>;
 
