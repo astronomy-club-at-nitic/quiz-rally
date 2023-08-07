@@ -1,6 +1,6 @@
 'use client';
 
-import { type ReactNode, useEffect, useState } from 'react';
+import { useEffect, useState, type ComponentPropsWithoutRef, type ReactNode } from 'react';
 import ReceptionMapImage from '@/asset/map/1.png';
 import { Dialog, DialogContent, DialogTrigger } from '@/component/common/dialog';
 import { Image } from '@/component/common/image';
@@ -9,7 +9,9 @@ import { GiftIcon } from '@/icon/gift-icon';
 import { useAnswerStatuses } from '@/state/answer-status';
 import { breakpoints } from '@/style/token';
 
-export const BlessingModal = (): ReactNode => {
+type BlessingModalProps = Omit<ComponentPropsWithoutRef<typeof Dialog>, 'children' | 'className' | 'open' | 'onOpenChange'>;
+
+export const BlessingModal = ({ ...props }: BlessingModalProps): ReactNode => {
   const { answerStatuses } = useAnswerStatuses();
   const isAllCorrect = answerStatuses.every((status) => status.isCorrect);
 
@@ -26,7 +28,7 @@ export const BlessingModal = (): ReactNode => {
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen} defaultOpen>
+    <Dialog open={open} onOpenChange={setOpen} defaultOpen {...props}>
       <DialogTrigger asChild>
         <button className="rounded-full bg-blue-3 p-3 shadow-lg transition hover:bg-blue-4">
           <GiftIcon className="h-7 w-7 fill-slate-12" />
