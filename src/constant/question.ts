@@ -1,5 +1,7 @@
 import ChoiceThumbnail1Image from '@/asset/choice/thumbnail1.png';
 import Map1Image from '@/asset/map/1.png';
+import Map2Image from '@/asset/map/2.png';
+import Map3Image from '@/asset/map/3.png';
 import QuestionThumbnail1Image from '@/asset/question/thumbnail1.jpg';
 import type { StaticImageData } from '@/type/static-image-data';
 
@@ -64,7 +66,7 @@ export const questions: Question[] = [
       hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
     },
     mapImageSrc: Map1Image,
-    mapImageAlt: '茨城県笠間市笠間310を示した地図の画像。',
+    mapImageAlt: '2階 208 INGNI を示した地図',
     hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
   },
   {
@@ -100,8 +102,8 @@ export const questions: Question[] = [
         '高い標高に曝されたポテトチップスの袋は、南方 - ハルトマン時空方程式により、ポテトチップスの含有塩分量に比例した時間を経て富士山に変化します。なお、すべての財団職員は自分がポテトチップスではないことに留意してください。',
       hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
     },
-    mapImageSrc: Map1Image,
-    mapImageAlt: '茨城県笠間市笠間310を示した地図の画像。',
+    mapImageSrc: Map2Image,
+    mapImageAlt: '2階 ノースコート レオンくんのもりを示した地図',
     hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
   },
   {
@@ -137,8 +139,8 @@ export const questions: Question[] = [
         '高い標高に曝されたポテトチップスの袋は、南方 - ハルトマン時空方程式により、ポテトチップスの含有塩分量に比例した時間を経て富士山に変化します。なお、すべての財団職員は自分がポテトチップスではないことに留意してください。',
       hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
     },
-    mapImageSrc: Map1Image,
-    mapImageAlt: '茨城県笠間市笠間310を示した地図の画像。',
+    mapImageSrc: Map3Image,
+    mapImageAlt: '3階 308 Yogibo Store を示した地図',
     hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
   },
 ];
