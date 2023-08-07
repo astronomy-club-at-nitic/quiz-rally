@@ -66,7 +66,7 @@ export const questions: Question[] = [
       hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
     },
     mapImageSrc: Map1Image,
-    mapImageAlt: '2階 208 INGNI を示した地図',
+    mapImageAlt: '2階 208 INGNI の手前を示した地図',
     hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
   },
   {
@@ -140,7 +140,7 @@ export const questions: Question[] = [
       hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
     },
     mapImageSrc: Map3Image,
-    mapImageAlt: '3階 308 Yogibo Store を示した地図',
+    mapImageAlt: '3階 308 Yogibo Store の手前を示した地図',
     hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
   },
 ];
