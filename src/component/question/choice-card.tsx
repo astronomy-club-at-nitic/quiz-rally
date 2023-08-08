@@ -1,6 +1,6 @@
 'use client';
 
-import { type ComponentPropsWithRef, type ComponentPropsWithoutRef, type ReactNode, useRef } from 'react';
+import { type ComponentPropsWithRef, type ComponentPropsWithoutRef, type ReactNode, useRef, useId } from 'react';
 import { Image } from '@/component/common/image';
 import type { Choice } from '@/constant/question';
 import { breakpoints } from '@/style/token';
@@ -14,11 +14,8 @@ type ChoiceCardProps = Omit<ComponentPropsWithoutRef<'div'>, 'children' | 'class
 };
 
 export const ChoiceCard = ({ choice, isSelected, isAnswered, inputProps, ...props }: ChoiceCardProps): ReactNode => {
-  // TODO: if this isseu is fixed, useId can be used. (https://github.com/vercel/next.js/issues/53110)
-  // Ref: https://github.com/vercel/next.js/pull/53216
-  // const inputIdBase = useId();
-  // const inputId = `${inputIdBase}-${choice.id}`;
-  const inputId = `choice-card-input-${choice.id}`;
+  const inputIdBase = useId();
+  const inputId = `${inputIdBase}-${choice.id}`;
 
   const inputRef = useRef<HTMLInputElement>(null);
 
