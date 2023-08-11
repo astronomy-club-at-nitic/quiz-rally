@@ -7,6 +7,7 @@ import { colors } from '@/style/token';
 import { getBaseUrl } from '@/util/get-base-url';
 import { cn } from '@/util/tailwind';
 import '@/style/global.css';
+import { Footer } from '@/component/layout/footer';
 
 type RootLayoutProps = {
   children: ReactNode;
@@ -21,6 +22,7 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
           <main>{children}</main>
         </PageTransitionAnimationProvider>
       </ThemeProvider>
+      <Footer />
     </body>
   </html>
 );
