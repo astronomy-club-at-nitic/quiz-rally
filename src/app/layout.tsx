@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { BlessingModal } from '@/component/layout/blessing-modal';
+import { Footer } from '@/component/layout/footer';
 import { PageTransitionAnimationProvider } from '@/component/layout/page-transition-animation-provider';
 import { ThemeProvider } from '@/component/layout/theme-provider';
 import { fontFamily } from '@/font/family';
@@ -8,7 +9,6 @@ import { colors } from '@/style/token';
 import { getBaseUrl } from '@/util/get-base-url';
 import { cn } from '@/util/tailwind';
 import '@/style/global.css';
-import { Footer } from '@/component/layout/footer';
 
 type RootLayoutProps = {
   children: ReactNode;
