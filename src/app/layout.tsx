@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import { BlessingModal } from '@/component/layout/blessing-modal';
 import { PageTransitionAnimationProvider } from '@/component/layout/page-transition-animation-provider';
 import { ThemeProvider } from '@/component/layout/theme-provider';
 import { fontFamily } from '@/font/family';
@@ -21,6 +22,9 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
         <PageTransitionAnimationProvider>
           <main>{children}</main>
         </PageTransitionAnimationProvider>
+        <div className="fixed bottom-7 right-7">
+          <BlessingModal />
+        </div>
       </ThemeProvider>
       <Footer />
     </body>

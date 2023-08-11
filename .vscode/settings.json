@@ -149,5 +149,6 @@
   "files.encoding": "utf8",
   "files.eol": "\n",
   "jest.jestCommandLine": "pnpm test --",
+  "tailwindCSS.classAttributes": ["class", "className", "outsideClass"],
   "tailwindCSS.experimental.classRegex": [["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]]
 }

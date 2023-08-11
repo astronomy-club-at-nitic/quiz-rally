@@ -1,10 +1,8 @@
-// TODO: Remove this comment if QuestionIdPage is implemented.
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-// import { QuestionPage } from '@/component/question/question-page';
+import { QuestionPage } from '@/component/question/question-page';
 import { questions } from '@/constant/question';
-// import { digest } from '@/util/digest';
+import { digest } from '@/util/digest';
 
 type QuestionIdPageProps = {
   params: {
@@ -15,15 +13,15 @@ type QuestionIdPageProps = {
   };
 };
 
-const QuestionIdPage = async ({ params /* , searchParams, */ }: QuestionIdPageProps): Promise<JSX.Element> => {
+const QuestionIdPage = async ({ params, searchParams }: QuestionIdPageProps): Promise<JSX.Element> => {
   const question = questions.find((q) => q.id === params.questionId);
   if (!question) {
     notFound();
   }
 
-  // const hashedToken = searchParams.token && (await digest(searchParams.token));
+  const hashedToken = searchParams.token && (await digest(searchParams.token));
 
-  return <></>;
+  return <QuestionPage question={question} hashedToken={hashedToken} />;
 };
 
 export default QuestionIdPage;
@@ -41,6 +39,6 @@ export const generateMetadata = async ({ params }: QuestionIdPageProps): Promise
   }
 
   return {
-    title: `問題${question.id}. ${question.title}`,
+    title: question.title,
   };
 };
