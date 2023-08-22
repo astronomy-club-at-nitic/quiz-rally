@@ -41,7 +41,7 @@
     "@tsconfig/next": "2.0.0",
     "@tsconfig/strictest": "2.0.1",
     "@types/jest": "29.5.3",
-    "@types/node": "20.5.1",
+    "@types/node": "20.5.2",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "@typescript-eslint/eslint-plugin": "6.4.1",
@@ -73,7 +73,7 @@
     "tailwindcss-animate": "1.0.6",
     "ts-jest": "29.1.1",
     "ts-node": "10.9.1",
-    "tw-colors": "2.1.1",
+    "tw-colors": "2.2.0",
     "typescript": "5.1.6"
   }
 }
