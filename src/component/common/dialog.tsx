@@ -56,13 +56,14 @@ export const DialogContent = forwardRef<ElementRef<typeof DialogPrimitive.Conten
       <DialogPrimitive.Content
         ref={ref}
         className={cn(
-          'fixed left-1/2 top-1/2 z-50 w-11/12 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-blue-1 p-10 shadow-2xl tablet:w-auto',
+          'fixed left-1/2 top-1/2 z-50 flex max-h-[90dvh] w-11/12 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-blue-1 shadow-2xl tablet:w-auto',
           'duration-200 rdx-state-closed:animate-out rdx-state-closed:fade-out-0 rdx-state-closed:zoom-out-95 rdx-state-closed:slide-out-to-left-1/2 rdx-state-closed:slide-out-to-top-[48%] rdx-state-open:animate-in rdx-state-open:fade-in-0 rdx-state-open:zoom-in-95 rdx-state-open:slide-in-from-left-1/2 rdx-state-open:slide-in-from-top-[48%]',
-          dialogContentVariant({ display }),
         )}
         {...props}
       >
-        {children}
+        <div className="overflow-y-auto">
+          <div className={cn('p-10', dialogContentVariant({ display }))}>{children}</div>
+        </div>
         <DialogPrimitive.Close className="absolute right-6 top-6 rounded-full p-2 transition hover:bg-blue-4">
           <CrossIcon className="h-6 w-6 fill-slate-12" />
           <span className="sr-only">閉じる</span>
