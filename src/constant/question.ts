@@ -67,7 +67,7 @@ export const questions: Question[] = [
     },
     mapImageSrc: Map1Image,
     mapImageAlt: '2階 208 INGNI の手前を示した地図',
-    hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
+    hashedToken: '85423cedc3515c95da472ce584b22b2bfa0b3aa587f9af9c2c6cdef81d5ac007',
   },
   {
     id: '2',
@@ -104,7 +104,7 @@ export const questions: Question[] = [
     },
     mapImageSrc: Map2Image,
     mapImageAlt: '2階 ノースコート レオンくんのもりを示した地図',
-    hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
+    hashedToken: 'b504e1e585364cdb8891426b64383c2ac65dd96dfd9fd953686560861305963d',
   },
   {
     id: '3',
@@ -141,6 +141,6 @@ export const questions: Question[] = [
     },
     mapImageSrc: Map3Image,
     mapImageAlt: '3階 308 Yogibo Store の手前を示した地図',
-    hashedToken: '6d8d5db26b326e3da38bb3f4016629b2eb14ba713bd89698513d7099e60734f6',
+    hashedToken: '6f675f36aac3a4fc241e0f8bc7c4df952c831d55e1aca5f69a1436394dcdcde6',
   },
 ];
