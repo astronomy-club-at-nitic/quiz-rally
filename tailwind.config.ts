@@ -1,7 +1,11 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
+import _tailwindcssRadixPlugin from 'tailwindcss-radix';
 import { createThemes } from 'tw-colors';
 import { breakpoints, colors } from './src/style/token';
+
+// NOTE: Correct type definition for `tailwindcss-radix` for ESM using evil type casting
+const tailwindcssRadixPlugin = _tailwindcssRadixPlugin as unknown as typeof _tailwindcssRadixPlugin.handler;
 
 const config: Config = {
   mode: 'jit',
@@ -26,6 +30,11 @@ const config: Config = {
       dark: colors.dark,
     }),
     require('tailwindcss-animate'),
+    tailwindcssRadixPlugin({
+      // Generates `rdx-[state/side/orientation]-*` utilities for `data-[state/side/orientation]="*"`
+      // Refer: https://github.com/ecklf/tailwindcss-radix#usage
+      variantPrefix: 'rdx',
+    }),
   ],
 };
 
