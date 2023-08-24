@@ -22,7 +22,7 @@ export type Question = {
   id: string;
   title: string;
   content: string;
-  thumbnailSrc: StaticImageData;
+  thumbnail: StaticImageData;
   thumbnailAlt: string;
   choices: Choice[];
   answer: Answer;
@@ -37,7 +37,7 @@ export const questions: Question[] = [
     title: 'ポテチを富士山に持っていくとどうなる？',
     content:
       'あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？',
-    thumbnailSrc: QuestionThumbnail1Image,
+    thumbnail: QuestionThumbnail1Image,
     thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
     choices: [
       {
@@ -74,7 +74,7 @@ export const questions: Question[] = [
     title: 'ポテチを富士山に持っていくとどうなる？',
     content:
       'あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？',
-    thumbnailSrc: QuestionThumbnail1Image,
+    thumbnail: QuestionThumbnail1Image,
     thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
     choices: [
       {
@@ -111,7 +111,7 @@ export const questions: Question[] = [
     title: 'ポテチを富士山に持っていくとどうなる？',
     content:
       'あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？',
-    thumbnailSrc: QuestionThumbnail1Image,
+    thumbnail: QuestionThumbnail1Image,
     thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
     choices: [
       {

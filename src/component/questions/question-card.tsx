@@ -6,12 +6,12 @@ import type { Question } from '@/constant/question';
 import { cn } from '@/util/tailwind';
 
 type CardProps = ComponentPropsWithoutRef<'div'> &
-  Pick<Question, 'title' | 'thumbnailSrc' | 'thumbnailAlt' | 'id'> &
+  Pick<Question, 'title' | 'thumbnail' | 'thumbnailAlt' | 'id'> &
   Pick<AnswerStatusIconProps, 'status'>;
 
-export const QuestionCard: FC<CardProps> = ({ id, title, thumbnailAlt, thumbnailSrc, status, className, ...props }) => (
+export const QuestionCard: FC<CardProps> = ({ id, title, thumbnailAlt, thumbnail, status, className, ...props }) => (
   <div className={cn('flex flex-col items-center overflow-hidden rounded-xl bg-slate-3', className)} {...props}>
-    <Image {...thumbnailSrc} alt={thumbnailAlt} className="h-64 w-full object-cover" />
+    <Image {...thumbnail} alt={thumbnailAlt} className="h-64 w-full object-cover" />
     <div className="relative flex flex-col items-stretch justify-start gap-2 px-8 py-6">
       <AnswerStatusIcon status={status} className="absolute -top-16 right-2 z-10 rotate-12" />
       <hgroup className="flex flex-col items-stretch justify-start gap-2">

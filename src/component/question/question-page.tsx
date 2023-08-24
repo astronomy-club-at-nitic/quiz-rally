@@ -31,7 +31,7 @@ export const QuestionPage = ({ question, hashedToken, ...props }: QuestionPagePr
     <section className="flex flex-col items-center gap-12 px-5 py-12 pt-0 laptop:px-48" {...props}>
       <div className="relative flex h-[360px] w-screen items-end justify-center p-3 tablet:h-[480px] tablet:justify-end tablet:p-5">
         <Image
-          src={question.thumbnailSrc}
+          src={question.thumbnail}
           sizes={`${breakpoints.desktop.mediaQuery} 1280px, 100vw`}
           alt={question.thumbnailAlt}
           priority
