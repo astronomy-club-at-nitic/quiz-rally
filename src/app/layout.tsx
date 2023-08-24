@@ -17,7 +17,7 @@ type RootLayoutProps = {
 const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
   <html lang="ja" suppressHydrationWarning>
     <head />
-    <body className={cn(fontFamily, 'bg-blue-1 font-sans')}>
+    <body className={cn(fontFamily, 'flex min-h-screen w-full flex-col items-stretch justify-between bg-blue-1 font-sans  text-slate-12')}>
       <ThemeProvider attribute="data-theme" enableSystem defaultTheme="system">
         <PageTransitionAnimationProvider>
           <main>{children}</main>
@@ -25,8 +25,14 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
         <div className="fixed bottom-7 right-7">
           <BlessingModal />
         </div>
+        <div
+          aria-hidden
+          className="absolute bottom-0 -z-50 flex w-full flex-row items-center justify-center overflow-x-hidden overflow-y-visible blur-[221px]"
+        >
+          <div className="aspect-square h-[684px] rounded-full bg-blue-7"></div>
+        </div>
+        <Footer />
       </ThemeProvider>
-      <Footer />
     </body>
   </html>
 );
