@@ -8,7 +8,7 @@ import { cn } from '@/util/tailwind';
 type FooterProps = Omit<ComponentPropsWithoutRef<'footer'>, 'className' | 'children'>;
 
 export const Footer = ({ ...props }: FooterProps): ReactNode => (
-  <div className="mt-[-600px] overflow-hidden pt-[684px]">
+  <div className="-z-10 mt-[-600px] overflow-hidden pt-[684px]">
     <footer className="relative flex w-full flex-col items-stretch justify-start gap-5 bg-blue-3 px-10 py-12" {...props}>
       <ul
         className={cn(
