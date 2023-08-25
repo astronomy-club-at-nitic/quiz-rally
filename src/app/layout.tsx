@@ -25,12 +25,6 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
         <div className="fixed bottom-7 right-7">
           <BlessingModal />
         </div>
-        <div
-          aria-hidden
-          className="absolute bottom-0 -z-50 flex w-full flex-row items-center justify-center overflow-x-hidden overflow-y-visible blur-[221px]"
-        >
-          <div className="aspect-square h-[684px] rounded-full bg-blue-7"></div>
-        </div>
         <Footer />
       </ThemeProvider>
     </body>

@@ -23,17 +23,7 @@ const RootPage = (): ReactNode => (
     <div className="grid grid-cols-[repeat(auto-fit,288px)] justify-center gap-6 py-12 tablet:grid-cols-[repeat(auto-fit,384px)]">
       {questions.map((question) => (
         <Link key={question.id} href={`/${question.id}`}>
-          <QuestionCard {...question} status="correct" />
-        </Link>
-      ))}
-      {questions.map((question) => (
-        <Link key={question.id} href={`/${question.id}`}>
-          <QuestionCard {...question} status="incorrect" />
-        </Link>
-      ))}
-      {questions.map((question) => (
-        <Link key={question.id} href={`/${question.id}`}>
-          <QuestionCard {...question} status="unanswered" />
+          <QuestionCard question={question} />
         </Link>
       ))}
     </div>
