@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, type ComponentPropsWithoutRef, type ReactNode } from 'react';
-import ReceptionMapImage from '@/asset/map/1.png';
+import ReceptionMapImage from '@/asset/map/4.png';
 import { Dialog, DialogContent, DialogTrigger } from '@/component/common/dialog';
 import { Image } from '@/component/common/image';
 import { ConfettiBallIcon } from '@/icon/confetti-ball-icon';
