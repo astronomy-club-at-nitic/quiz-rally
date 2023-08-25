@@ -1,8 +1,18 @@
-import ChoiceThumbnail1Image from '@/asset/choice/thumbnail1.png';
 import Map1Image from '@/asset/map/1.png';
 import Map2Image from '@/asset/map/2.png';
 import Map3Image from '@/asset/map/3.png';
-import QuestionThumbnail1Image from '@/asset/question/thumbnail1.jpg';
+import QuestionChoice1AImage from '@/asset/question/choice1-a.webp';
+import QuestionChoice1BImage from '@/asset/question/choice1-b.webp';
+import QuestionChoice1CImage from '@/asset/question/choice1-c.webp';
+import QuestionChoice2AImage from '@/asset/question/choice2-a.webp';
+import QuestionChoice2BImage from '@/asset/question/choice2-b.webp';
+import QuestionChoice2CImage from '@/asset/question/choice2-c.webp';
+import QuestionChoice3AImage from '@/asset/question/choice3-a.webp';
+import QuestionChoice3BImage from '@/asset/question/choice3-b.webp';
+import QuestionChoice3CImage from '@/asset/question/choice3-c.webp';
+import QuestionThumbnail1Image from '@/asset/question/thumbnail1.webp';
+import QuestionThumbnail2Image from '@/asset/question/thumbnail2.webp';
+import QuestionThumbnail3Image from '@/asset/question/thumbnail3.webp';
 import type { StaticImageData } from '@/type/static-image-data';
 
 export type Choice = {
@@ -34,35 +44,34 @@ export type Question = {
 export const questions: Question[] = [
   {
     id: '1',
-    title: 'ポテチを富士山に持っていくとどうなる？',
+    title: '実際に小惑星の名前に付けられているのはどれ？',
     content:
-      'あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？',
+      '報告・公表された小惑星の観測数は、1990年代前半は年間10万件台ほどでしたが、近年その数はぐっと増え、年間700万件を超えています。さて、実際に小惑星の名前とされているのは次のうちどれでしょう？',
     thumbnail: QuestionThumbnail1Image,
-    thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+    thumbnailAlt: '',
     choices: [
       {
         id: '1',
-        title: 'ポテチが富士山になる',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'かぐや姫',
+        thumbnailSrc: QuestionChoice1AImage,
+        thumbnailAlt: '',
       },
       {
         id: '2',
-        title: 'お前はポテチになる',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: '花咲かじいさん',
+        thumbnailSrc: QuestionChoice1BImage,
+        thumbnailAlt: '',
       },
       {
         id: '3',
-        title: '[編集済み]',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: '舌切りすずめ',
+        thumbnailSrc: QuestionChoice1CImage,
+        thumbnailAlt: '',
       },
     ],
     answer: {
-      title: 'ポテチが富士山になる',
-      content:
-        '高い標高に曝されたポテトチップスの袋は、南方 - ハルトマン時空方程式により、ポテトチップスの含有塩分量に比例した時間を経て富士山に変化します。なお、すべての財団職員は自分がポテトチップスではないことに留意してください。',
+      title: 'かぐや姫',
+      content: '小惑星かぐや姫は1981年10月30日に東京天文台木曽観測所で香西洋樹と古川騏一郎によって発見されました。',
       hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
     },
     mapImageSrc: Map1Image,
@@ -71,36 +80,36 @@ export const questions: Question[] = [
   },
   {
     id: '2',
-    title: 'ポテチを富士山に持っていくとどうなる？',
+    title: 'これまでに打ち上げられた人工衛星は全部でいくつ？',
     content:
-      'あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？',
-    thumbnail: QuestionThumbnail1Image,
-    thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+      '1957年10月4日のソビエト連邦によるスプートニク1号の打ち上げを皮切りに、人類は今までいくつもの人工衛星を打ち上げてきました。さて、実際にこれまで打ち上げられた人工衛星の数は次のうちどれでしょう？',
+    thumbnail: QuestionThumbnail2Image,
+    thumbnailAlt: '',
     choices: [
       {
         id: '1',
-        title: 'ポテチが富士山になる',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'およそ1600機',
+        thumbnailSrc: QuestionChoice2AImage,
+        thumbnailAlt: '',
       },
       {
         id: '2',
-        title: 'お前はポテチになる',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'およそ16000機',
+        thumbnailSrc: QuestionChoice2BImage,
+        thumbnailAlt: '',
       },
       {
         id: '3',
-        title: '[編集済み]',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'およそ160000機',
+        thumbnailSrc: QuestionChoice2CImage,
+        thumbnailAlt: '',
       },
     ],
     answer: {
-      title: 'ポテチが富士山になる',
+      title: 'およそ16000機',
       content:
-        '高い標高に曝されたポテトチップスの袋は、南方 - ハルトマン時空方程式により、ポテトチップスの含有塩分量に比例した時間を経て富士山に変化します。なお、すべての財団職員は自分がポテトチップスではないことに留意してください。',
-      hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
+        'Union of Concerned Scientists によると、2022年時点では、打ち上げられた人工衛星の数は16000機で、そのうち現在も周回軌道上にいるのが6700機だそうです。',
+      hashedChoiceId: 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35',
     },
     mapImageSrc: Map2Image,
     mapImageAlt: '2階 ノースコート レオンくんのもりを示した地図',
@@ -108,36 +117,36 @@ export const questions: Question[] = [
   },
   {
     id: '3',
-    title: 'ポテチを富士山に持っていくとどうなる？',
+    title: '実際に宇宙食として食べられていないのはどれ？',
     content:
-      'あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？',
-    thumbnail: QuestionThumbnail1Image,
-    thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+      '宇宙食にはさまざまな制約がありますが、研究開発の結果、現在宇宙食の種類は300を超えています。では、実際に宇宙食として食べられていないものは次のうちどれでしょう？',
+    thumbnail: QuestionThumbnail3Image,
+    thumbnailAlt: '',
     choices: [
       {
         id: '1',
-        title: 'ポテチが富士山になる',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'うなぎの蒲焼き',
+        thumbnailSrc: QuestionChoice3AImage,
+        thumbnailAlt: '',
       },
       {
         id: '2',
-        title: 'お前はポテチになる',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'すき焼き',
+        thumbnailSrc: QuestionChoice3BImage,
+        thumbnailAlt: '',
       },
       {
         id: '3',
-        title: '[編集済み]',
-        thumbnailSrc: ChoiceThumbnail1Image,
-        thumbnailAlt: '手前にポテトチップスの袋が写っていて背景に富士山が写っている画像。',
+        title: 'お好み焼き',
+        thumbnailSrc: QuestionChoice3CImage,
+        thumbnailAlt: '',
       },
     ],
     answer: {
-      title: 'ポテチが富士山になる',
+      title: 'すき焼き',
       content:
-        '高い標高に曝されたポテトチップスの袋は、南方 - ハルトマン時空方程式により、ポテトチップスの含有塩分量に比例した時間を経て富士山に変化します。なお、すべての財団職員は自分がポテトチップスではないことに留意してください。',
-      hashedChoiceId: '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b',
+        'うなぎの蒲焼 (スペースうなぎ) は飲食企業経営者の宮澤健氏によって、お好み焼きは日清食品によってそれぞれ宇宙食として開発されましたが、すき焼きは未だ宇宙食にはなっていません。',
+      hashedChoiceId: 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35',
     },
     mapImageSrc: Map3Image,
     mapImageAlt: '3階 308 Yogibo Store の手前を示した地図',

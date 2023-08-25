@@ -38,7 +38,7 @@ export const ChoiceCard = ({ choice, isSelected, isAnswered, inputProps, ...prop
         alt={choice.thumbnailAlt}
         fill
         placeholder="blur"
-        className="absolute object-cover"
+        className="absolute bg-blue-2 object-cover object-top"
       />
       <div className="absolute inset-0 flex h-full w-full items-end p-3">
         <div className="flex w-fit items-center gap-2 rounded-xl bg-blue-3 px-4 py-2">

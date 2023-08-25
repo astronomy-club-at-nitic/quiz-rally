@@ -49,12 +49,10 @@ export const QuestionPage = ({ question, hashedToken, ...props }: QuestionPagePr
               className="fill-blue-12"
             />
           </svg>
-          <span className="text-lg font-bold text-slate-12 tablet:text-xl">ポテチを富士山に持っていくとどうなる？</span>
+          <span className="text-lg font-bold text-slate-12 tablet:text-xl">{question.title}</span>
         </h1>
       </div>
-      <p className="text-base text-slate-11">
-        あなたは今、まだ開けていないポテトチップスの袋を持っています。さて、それを持ったまま富士山の麓から山頂まで登山した時、袋はどうなっているでしょうか？
-      </p>
+      <p className="text-base text-slate-11">{question.content}</p>
       {!shouldTransitionToAnswerablePage && (
         <>
           <QuestionFormSection question={question} answerStatus={currentAnswerStatus} />
