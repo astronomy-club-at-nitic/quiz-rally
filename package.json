@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@tsconfig/next": "2.0.0",
-    "@tsconfig/strictest": "2.0.1",
+    "@tsconfig/strictest": "2.0.2",
     "@types/jest": "29.5.4",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
