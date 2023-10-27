@@ -35,7 +35,7 @@
     "react-icons": "4.11.0",
     "sharp": "0.32.6",
     "tailwind-merge": "1.14.0",
-    "tailwind-variants": "0.1.16"
+    "tailwind-variants": "0.1.17"
   },
   "devDependencies": {
     "@tsconfig/next": "2.0.1",
