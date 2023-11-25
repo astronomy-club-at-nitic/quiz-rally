@@ -15,8 +15,8 @@ dependencies:
     specifier: 10.16.5
     version: 10.16.5(react-dom@18.2.0)(react@18.2.0)
   jotai:
-    specifier: 2.5.1
-    version: 2.5.1(@types/react@18.2.38)(react@18.2.0)
+    specifier: 2.6.0
+    version: 2.6.0(@types/react@18.2.38)(react@18.2.0)
   next:
     specifier: 13.5.6
     version: 13.5.6(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
@@ -4444,8 +4444,8 @@ packages:
     resolution: {integrity: sha512-oVhqoRDaBXf7sjkll95LHVS6Myyyb1zaunVwk4Z0+WPSW4gjS0pl01zYKHScTuyEhQsFxV5L4DR5r+YqSyqyyg==}
     hasBin: true
 
-  /jotai@2.5.1(@types/react@18.2.38)(react@18.2.0):
-    resolution: {integrity: sha512-vanPCCSuHczUXNbVh/iUunuMfrWRL4FdBtAbTRmrfqezJcKb8ybBTg8iivyYuUHapjcDETyJe1E4inlo26bVHA==}
+  /jotai@2.6.0(@types/react@18.2.38)(react@18.2.0):
+    resolution: {integrity: sha512-Vt6hsc04Km4j03l+Ax+Sc+FVft5cRJhqgxt6GTz6GM2eM3DyX3CdBdzcG0z2FrlZToL1/0OAkqDghIyARWnSuQ==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@types/react': '>=17.0.0'
