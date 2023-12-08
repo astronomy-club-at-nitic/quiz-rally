@@ -25,7 +25,7 @@
   "dependencies": {
     "@radix-ui/react-dialog": "1.0.5",
     "clsx": "2.0.0",
-    "framer-motion": "10.16.15",
+    "framer-motion": "10.16.16",
     "jotai": "2.6.0",
     "next": "13.5.6",
     "next-themes": "0.2.1",
@@ -73,7 +73,7 @@
     "tailwindcss-animate": "1.0.7",
     "tailwindcss-radix": "2.8.0",
     "ts-jest": "29.1.1",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "tw-colors": "2.2.0",
     "typescript": "5.3.3"
   }
