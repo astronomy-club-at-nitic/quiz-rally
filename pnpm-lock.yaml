@@ -137,8 +137,8 @@ devDependencies:
     specifier: 10.0.0
     version: 10.0.0(postcss@8.4.32)(stylelint@15.11.0)
   stylelint-prettier:
-    specifier: 4.1.0
-    version: 4.1.0(prettier@3.1.1)(stylelint@15.11.0)
+    specifier: 5.0.0
+    version: 5.0.0(prettier@3.1.1)(stylelint@15.11.0)
   tailwindcss:
     specifier: 3.4.0
     version: 3.4.0(ts-node@10.9.2)
@@ -547,7 +547,7 @@ packages:
     resolution: {integrity: sha512-ZX/etZEZw8DR7zAB1eVQT40lNo0jeqpb6dCgOvctB6FIQ5PoXfMuNY8+ayQfu8tNQbAB8gQWSSJupR8NxeiZXw==}
     requiresBuild: true
     dependencies:
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
     optional: true
 
@@ -1201,7 +1201,7 @@ packages:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /@radix-ui/primitive@1.0.1:
@@ -5579,7 +5579,7 @@ packages:
       '@types/react': 18.2.46
       react: 18.2.0
       react-style-singleton: 2.2.1(@types/react@18.2.46)(react@18.2.0)
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /react-remove-scroll@2.5.5(@types/react@18.2.46)(react@18.2.0):
@@ -5615,7 +5615,7 @@ packages:
       get-nonce: 1.0.1
       invariant: 2.2.4
       react: 18.2.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /react@18.2.0:
@@ -6224,12 +6224,12 @@ packages:
       stylelint: 15.11.0
     dev: true
 
-  /stylelint-prettier@4.1.0(prettier@3.1.1)(stylelint@15.11.0):
-    resolution: {integrity: sha512-dd653q/d1IfvsSQshz1uAMe+XDm6hfM/7XiFH0htYY8Lse/s5ERTg7SURQehZPwVvm/rs7AsFhda9EQ2E9TS0g==}
-    engines: {node: ^14.17.0 || >=16.0.0}
+  /stylelint-prettier@5.0.0(prettier@3.1.1)(stylelint@15.11.0):
+    resolution: {integrity: sha512-RHfSlRJIsaVg5Br94gZVdWlz/rBTyQzZflNE6dXvSxt/GthWMY3gEHsWZEBaVGg7GM+XrtVSp4RznFlB7i0oyw==}
+    engines: {node: '>=18.12.0'}
     peerDependencies:
       prettier: '>=3.0.0'
-      stylelint: '>=15.8.0'
+      stylelint: '>=16.0.0'
     dependencies:
       prettier: 3.1.1
       prettier-linter-helpers: 1.0.0
@@ -6593,7 +6593,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /tw-colors@2.2.0(tailwindcss@3.4.0):
     resolution: {integrity: sha512-Frl87y0o/Ofiv5k+7+f5CF/oJfDAGxn/qoxtAmMoYP0BbqkobqWEgHBeCIyEZ7iYaZ7HgtqoINQf89MddEAhqA==}
@@ -6733,7 +6732,7 @@ packages:
     dependencies:
       '@types/react': 18.2.46
       react: 18.2.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /use-sidecar@1.1.2(@types/react@18.2.46)(react@18.2.0):
@@ -6749,7 +6748,7 @@ packages:
       '@types/react': 18.2.46
       detect-node-es: 1.1.0
       react: 18.2.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /util-deprecate@1.0.2:
