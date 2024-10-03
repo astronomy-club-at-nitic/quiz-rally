@@ -1,12 +1,12 @@
 {
   "name": "quiz-rally",
   "engines": {
-    "node": ">=18.0.0 <19",
+    "node": ">=18.0.0 <21",
     "pnpm": ">=8.0.0 <9"
   },
   "packageManager": "pnpm@8.14.0",
   "volta": {
-    "node": "18.19.0",
+    "node": "20.18.0",
     "pnpm": "8.14.0"
   },
   "scripts": {
