@@ -39,8 +39,8 @@ dependencies:
     specifier: 0.33.1
     version: 0.33.1
   tailwind-merge:
-    specifier: 1.14.0
-    version: 1.14.0
+    specifier: 2.5.4
+    version: 2.5.4
   tailwind-variants:
     specifier: 0.1.20
     version: 0.1.20(tailwindcss@3.4.0)
@@ -547,7 +547,7 @@ packages:
     resolution: {integrity: sha512-ZX/etZEZw8DR7zAB1eVQT40lNo0jeqpb6dCgOvctB6FIQ5PoXfMuNY8+ayQfu8tNQbAB8gQWSSJupR8NxeiZXw==}
     requiresBuild: true
     dependencies:
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
     optional: true
 
@@ -5579,7 +5579,7 @@ packages:
       '@types/react': 18.2.46
       react: 18.2.0
       react-style-singleton: 2.2.1(@types/react@18.2.46)(react@18.2.0)
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /react-remove-scroll@2.5.5(@types/react@18.2.46)(react@18.2.0):
@@ -5615,7 +5615,7 @@ packages:
       get-nonce: 1.0.1
       invariant: 2.2.4
       react: 18.2.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /react@18.2.0:
@@ -6381,6 +6381,10 @@ packages:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: false
 
+  /tailwind-merge@2.5.4:
+    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
+    dev: false
+
   /tailwind-variants@0.1.20(tailwindcss@3.4.0):
     resolution: {integrity: sha512-AMh7x313t/V+eTySKB0Dal08RHY7ggYK0MSn/ad8wKWOrDUIzyiWNayRUm2PIJ4VRkvRnfNuyRuKbLV3EN+ewQ==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
@@ -6593,7 +6597,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /tw-colors@2.2.0(tailwindcss@3.4.0):
     resolution: {integrity: sha512-Frl87y0o/Ofiv5k+7+f5CF/oJfDAGxn/qoxtAmMoYP0BbqkobqWEgHBeCIyEZ7iYaZ7HgtqoINQf89MddEAhqA==}
@@ -6733,7 +6736,7 @@ packages:
     dependencies:
       '@types/react': 18.2.46
       react: 18.2.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /use-sidecar@1.1.2(@types/react@18.2.46)(react@18.2.0):
@@ -6749,7 +6752,7 @@ packages:
       '@types/react': 18.2.46
       detect-node-es: 1.1.0
       react: 18.2.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: false
 
   /util-deprecate@1.0.2:
